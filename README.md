@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   https://www.balenciaga.com/en-nl
   #### Screenshot(s) van de eerste pagina (small screen): 
-  HOMEPAGE 
+  HOMEPAGE <br>
   <img src="readme-images/Balenciaga Official Online Boutique NL.png" width="375px" alt="HOMEPAGE">
 
   https://www.balenciaga.com/en-nl/men/ready-to-wear/adidas
   #### Screenshot(s) van de tweede pagina (small screen):
-  CATEGORY-ADIDAS PAGE 
+  CATEGORY-ADIDAS PAGE <br>
   <img src="readme-images/Men's Adidas  Balenciaga NL.png" width="375px" alt="CATEGORY-ADIDAS PAGE">
  
 </details>
