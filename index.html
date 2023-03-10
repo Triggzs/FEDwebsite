@@ -1,46 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Nazier Abdul">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Balenciaga Website</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nazier Abdul" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
-		<header>
-			<p>Navbar</p>
-				<a href="https://www.balenciaga.com/en-nl" class="logo"><img</a>
-				
-					<ul>
-						<li>NEW ARRIVALS</li>
-						<li>WOMEN</li>
-						<li>MEN</li>
-						<li>Gift SHOP</li>
-						<li>ADIDAS</li>
-						<li>BAGS</li>
-						<li>EXPLORE</li>
-						<li>LOGO</li>
-						<li>NETHERLANDS</li>
-						<li>EN</li>
-						<li>CLIENT SERVICES</li>
-						<li>LOGIN</li>
-						<li>CART BUTTON</li>
-						<li>TEST</li>
+    <title>Balenciaga Website</title>
 
-					</ul>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
 
-			
-			
-		</header>	
+  <body>
+    <header>
+      <!--Top navigatie-->
+      <section class="topNav">
+        <nav class="mainNav">
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <a href="#">
+                    <button
+                      id="menuButton"
+                      aria-label="menu"
+                      aria-hidden="true"
+                    >
+                      <img id="imgHam"
+                        class="navImages"
+                        src="images/hamburger.png"
+                        alt="The hambuger-menu for a small size website"
+                      />
+                    </button>
+                  </a>
+                </li>
 
+                <li id="logo">
+                  <a href="/"
+                    ><img
+                      class="mainLogo"
+                      src="images/BalenciagaLogo.png"
+                      alt="The logo of Balenciaga"
+                    />
+                  </a>
+                </li>
 
-<script defer src="scripts/script.js"></script>
-</body>
-	
+                <li>
+                  <a href="#"
+                    ><img
+                      class="navImages"
+                      src="images/cart.png"
+                      alt="The Shopping bag"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="zoekBox">
+              <img
+                class="zoekIcoon"
+                src="images/search.png"
+                alt="zoekbalk icoon"
+              />
+              <input
+                class="zoekbalk"
+                placeholder="WHAT ARE YOU LOOKING FOR?"
+                type="search"
+              />
+            </li>
+
+            <li>
+              <ul class="navbreedte">
+                <li>NEW ARRIVALS</li>
+                <li>GIFT SHOPS</li>
+                <li>ADIDAS</li>
+                <li>GARDE-ROBE</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Hamburger Navigatie
+      <a href="#">
+        <button aria-hidden="true">
+          <img
+            class="navImages"
+            src="images/close.png"
+            alt="The close button for a small size website"
+          />
+        </button>
+      </a> -->
+
+      <section id="hamNav">
+        <nav class="hamburger">
+          <ul class="hamburgerUnorderd">
+            <li>NEW ARRIVALS</li>
+            <li>WOMEN</li>
+            <li>MEN</li>
+            <li>Gift SHOP</li>
+            <li>ADIDAS</li>
+            <li>BAGS</li>
+            <li>EXPLORE</li>
+            <li>LOGO</li>
+            <li>NETHERLANDS</li>
+            <li>EN</li>
+            <li>CLIENT SERVICES</li>
+            <li>LOGIN</li>
+            <li>CART BUTTON</li>
+            <li>TEST</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <ul class="mainContent">
+        <li>
+          <section>
+            <img src="images/firstPic.jpeg" alt="Winter 23 Collection" />
+            <h2>WINTER 23 COLLECTION</h2>
+            <button>WATCH THE SHOW</button>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <img src="images/secondPic.jpeg" alt="Winter 23 Collection" />
+            <h2>WINTER 23 COLLECTION</h2>
+            <button>WATCH THE SHOW</button>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <img src="images/thirdPic.jpeg" alt="Winter 23 Collection" />
+            <h2>WINTER 23 COLLECTION</h2>
+            <button>WATCH THE SHOW</button>
+          </section>
+        </li>
+
+        <li> 
+        <section>
+          <img src="images/fourthPic.jpeg" alt="Winter 23 Collection" />
+          <h2>WINTER 23 COLLECTION</h2>
+          <button>WATCH THE SHOW</button>
+        </section>
+      </li>
+
+      <li>
+        <section>
+          <img src="images/fifthPic.jpeg" alt="Winter 23 Collection" />
+          <h2>WINTER 23 COLLECTION</h2>
+          <button>WATCH THE SHOW</button>
+        </section>
+      </li>
+
+      <li>
+        <section>
+          <img src="images/sixthPic.jpeg" alt="Winter 23 Collection" />
+          <h2>WINTER 23 COLLECTION</h2>
+          <button>WATCH THE SHOW</button>
+        </section>
+      </ul>
+    </li>
+
+    </main>
+
+    <script defer src="scripts/script.js"></script>
+  </body>
 </html>

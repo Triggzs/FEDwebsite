@@ -1,31 +1,32 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 
-button, summary {
-	cursor: pointer;
+button,
+summary {
+  cursor: pointer;
 }
 
-
-
-
+body {
+  /* margin-left: 0px; */
+  /* margin-right: 0px;; */
+  /* padding-left: -50px; */
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-ul{
-	display: flex;
-	justify-content: space-around;
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
 }
 
 
@@ -34,4 +35,153 @@ ul{
 /****************/
 
 /* jouw code */
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0; /* To remove default bottom margin */
+  padding: 0; /* To remove default left padding */
+}
 
+#logo { /* Dit is de Li waar het logo in zit*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* Ik heb hier het logo in het midden van de row laten staan, zonder deze regel zou de logo aan de bovenkant van de row plakken. */
+
+img.mainLogo {
+  height: 1em;
+  width: 8.5em; /*logo width*/
+}
+
+img.navImages {
+  height: 2em;
+  margin:5px; /* Geeft al de ong(images) een margin van 5px als alle kanten.*/
+
+}
+nav.mainNav > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.mainNav ul li ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.hamburger > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+input.zoekbalk {
+  width: 100vw;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+img.zoekIcoon {
+  height: 2em;
+  margin: 5px;
+}
+
+li{
+  padding: none;
+}
+
+li.zoekBox{
+	display: flex;
+	flex-direction:row;
+	border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: none;
+}
+
+input[type="search"] {
+  background: transparent;
+  margin: 0;
+  padding:10px;
+  font-size: 16px;   
+}
+
+input[type="search"]::placeholder {
+  color: #767676;
+  font-size: .75rem;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="search"]:focus {
+  box-shadow: none;
+  border-color: none;
+  outline: none;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
+
+#hamNav{
+  position:absolute;
+  top: 90px;
+  width: 100vw;  
+  background-color: white;
+  transform:translatex(-100%);
+  transition:transform .3s;
+}
+
+button{
+border: none;
+background-color: transparent;
+width: 100%;
+height: 100%;
+}
+
+
+
+#menuButton{
+  display:grid;
+  place-items:center;
+}
+
+#imgHam{
+  width:80%; /*deze doet soms beetje gek op safarri*/
+  content:url("../images/hamburger.png");
+}
+
+#imgHam.menuOpen{
+  content:url("../images/close.png");
+}
+
+nav ul.hamburgerUnorderd > li{
+  font-family: BB-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: .03em;
+  padding:20px 12px;
+  border-bottom: 1px solid;
+  transition:transform .3s;
+}
+
+#hamNav.toonMenu {
+  transform:translatex(0%);
+}
+
+
+
+section > img{
+  width: 100%;
+
+}
+
+main > ul.mainContent{
+
+  display: flex;
+  flex-direction: column;
+}
