@@ -6,7 +6,7 @@
 *::before {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 button,
@@ -29,7 +29,6 @@ body {
   --color-background: #eee;
 }
 
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -43,7 +42,8 @@ ul {
   padding: 0; /* To remove default left padding */
 }
 
-#logo { /* Dit is de Li waar het logo in zit*/
+#logo {
+  /* Dit is de Li waar het logo in zit*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +56,9 @@ img.mainLogo {
 
 img.navImages {
   height: 2em;
-  margin:5px; /* Geeft al de ong(images) een margin van 5px als alle kanten.*/
-
+  margin: 5px; /* Geeft al de ong(images) een margin van 5px als alle kanten.*/
 }
+/*De eerste ul na het element met de class mainNav wordt nu aangeroepen en in ene columb gepositioneerd*/
 nav.mainNav > ul {
   display: flex;
   flex-direction: column;
@@ -85,14 +85,14 @@ img.zoekIcoon {
   margin: 5px;
 }
 
-li{
+li {
   padding: none;
 }
 
-li.zoekBox{
-	display: flex;
-	flex-direction:row;
-	border-top: 1px solid;
+li.zoekBox {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid;
   border-bottom: 1px solid;
   border-left: none;
   border-right: none;
@@ -101,13 +101,13 @@ li.zoekBox{
 input[type="search"] {
   background: transparent;
   margin: 0;
-  padding:10px;
-  font-size: 16px;   
+  padding: 10px;
+  font-size: 16px;
 }
 
 input[type="search"]::placeholder {
   color: #767676;
-  font-size: .75rem;
+  font-size: 0.75rem;
   display: flex;
   justify-content: center;
 }
@@ -126,62 +126,154 @@ input {
   background-color: #eee;
 }
 
-#hamNav{
-  position:absolute;
+#hamNav {
+  position: absolute;
   top: 90px;
-  width: 100vw;  
+  width: 100vw;
   background-color: white;
-  transform:translatex(-100%);
-  transition:transform .3s;
+  transform: translatex(-100%);
+  transition: transform 0.3s;
+  z-index: 1;
 }
 
-button{
-border: none;
-background-color: transparent;
-width: 100%;
-height: 100%;
+button {
+  border: none;
+  background-color: transparent;
 }
 
-
-
-#menuButton{
-  display:grid;
-  place-items:center;
+#menuButton {
+  display: grid;
+  place-items: center;
 }
 
-#imgHam{
-  width:80%; /*deze doet soms beetje gek op safarri*/
-  content:url("../images/hamburger.png");
+#imgHam {
+  width: 32px;
+  height: 32px; /*deze doet soms beetje gek op safarri*/
+  content: url("../images/hamburger.png");
 }
 
-#imgHam.menuOpen{
-  content:url("../images/close.png");
+#imgHam.menuOpen {
+  content: url("../images/close.png");
 }
 
-nav ul.hamburgerUnorderd > li{
-  font-family: BB-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: .75rem;
+nav ul.hamburgerUnorderd > li {
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 130%;
-  letter-spacing: .03em;
-  padding:20px 12px;
+  letter-spacing: 0.03em;
+  padding: 20px 12px;
   border-bottom: 1px solid;
-  transition:transform .3s;
+  transition: transform 0.3s;
 }
 
 #hamNav.toonMenu {
-  transform:translatex(0%);
+  transform: translatex(0%);
 }
 
-
-
-section > img{
+section > img {
   width: 100%;
-
 }
 
-main > ul.mainContent{
-
+main > ul.mainContent {
   display: flex;
   flex-direction: column;
+}
+
+ul#interessant {
+  width: 100%;
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 60%;
+  letter-spacing: 0.03em;
+  padding: 20px 12px;
+  border-bottom: 1px solid;
+}
+
+.homepaginaMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.homepaginaMain > h2 {
+  font-family: BB-CondBold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #eee;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 280px;
+  text-align: center;
+}
+
+section.homepaginaMain > button {
+  position: absolute;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  right: 0.5rem;
+  margin-top: -1.25rem;
+}
+
+.tweedeGedeelteNav {
+  margin-top: 1.75rem;
+  margin-bottom: 1.9rem;
+  height: auto;
+  overflow-y: hidden;
+}
+ul.tweedeGedeelteNav > li {
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin: 12px 12px 0px;
+}
+
+button.mainButton {
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-height: 2.5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  background: #fff;
+  margin-top: 380px;
+}
+
+.footerContent {
+  background-color: #aaaaac;
+  display: flex;
+  align-items: center;
+
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  padding: 20px 12px;
+  border-bottom: 1px solid;
+}
+
+details {
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+  
 }

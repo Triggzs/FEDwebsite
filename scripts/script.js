@@ -7,6 +7,7 @@ console.log("hi");
 let openButton = document.querySelector("#menuButton");
 let deNav = document.querySelector("section#hamNav");
 let afbHamburger = document.querySelector("#imgHam");
+
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 openButton.addEventListener("click", openMenuList);
 openButton.addEventListener("click", hamAfbeelding);
@@ -18,3 +19,11 @@ function openMenuList() {
 function hamAfbeelding(){
 afbHamburger.classList.toggle("menuOpen")
 }
+
+details.addEventListener("toggle", (event) => {
+    if (details.open) {
+      /* the element was toggled open */
+    } else {
+      /* the element was toggled closed */
+    }
+  });
