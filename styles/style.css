@@ -14,17 +14,12 @@ summary {
   cursor: pointer;
 }
 
-body {
-  /* margin-left: 0px; */
-  /* margin-right: 0px;; */
-  /* padding-left: -50px; */
-}
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
   /* startje */
+  color-scheme: light dark;
   --color-text: #111;
   --color-background: #eee;
 }
@@ -32,8 +27,6 @@ body {
 /****************/
 /* JOUW STYLING */
 /****************/
-
-/* jouw code */
 ul {
   display: flex;
   justify-content: space-around;
@@ -49,7 +42,7 @@ ul {
   align-items: center;
 } /* Ik heb hier het logo in het midden van de row laten staan, zonder deze regel zou de logo aan de bovenkant van de row plakken. */
 
-img.mainLogo {
+img#mainLogo {
   height: 1em;
   width: 8.5em; /*logo width*/
 }
@@ -130,7 +123,6 @@ input {
   position: absolute;
   top: 90px;
   width: 100vw;
-  background-color: white;
   transform: translatex(-100%);
   transition: transform 0.3s;
   z-index: 1;
@@ -156,6 +148,81 @@ button {
   content: url("../images/close.png");
 }
 
+
+/*MEDIA QUERRIES VOOR DARK THEME*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --preferred-color-scheme: dark;
+    color: white;
+    background-color: black;
+  }
+
+  #hamNav {
+    background-color: black;
+  }
+
+  .footerContent {
+    background-color: black;
+  }
+  #imgHam {
+    content: url("../images/hamburgerDark.png");
+  }
+
+  #mainLogo {
+    content: url("../images/BalenciagaLogoDark.png");
+  }
+  #cart {
+    content: url("../images/cartDark.png");
+  }
+
+  #zoek {
+    content: url("../images/searchDark.png");
+  }
+
+  .arrow {
+    content: url("../images/arrowDark.png");
+  }
+
+  #imgHam.menuOpen {
+    content: url("../images/closeDark.png");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --preferred-color-scheme: light;
+  }
+  #hamNav {
+    background-color: white;
+  }
+
+  .footerContent {
+    background-color: #aaaaac;
+  }
+
+  #imgHam {
+    content: url("../images/hamburger.png");
+  }
+
+  #mainLogo {
+    content: url("../images/BalenciagaLogo.png");
+  }
+
+  #cart {
+    content: url("../images/cart.png");
+  }
+
+  #zoek {
+    content: url("../images/search.png");
+  }
+  .arrow {
+    content: url("../images/arrow.png");
+  }
+  #imgHam.menuOpen {
+    content: url("../images/close.png");
+  }
+}
+
 nav ul.hamburgerUnorderd > li {
   font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
@@ -164,11 +231,20 @@ nav ul.hamburgerUnorderd > li {
   letter-spacing: 0.03em;
   padding: 20px 12px;
   border-bottom: 1px solid;
-  transition: transform 0.3s;
 }
 
 #hamNav.toonMenu {
   transform: translatex(0%);
+}
+/*MEDIA QUERRY VOOR REDUCED MOTION*/
+@media (prefers-reduced-motion) {
+  #hamNav.toonMenu {
+    transition: none;
+  }
+
+  #hamNav {
+    transition: none;
+  }
 }
 
 section > img {
@@ -258,7 +334,6 @@ button.mainButton {
 }
 
 .footerContent {
-  background-color: #aaaaac;
   display: flex;
   align-items: center;
 
@@ -275,5 +350,4 @@ details {
   position: relative;
   width: 100%;
   margin-left: 10px;
-  
 }
