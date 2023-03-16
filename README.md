@@ -93,13 +93,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### Homepage: 
-  <img src="Breakdownschets1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdownschets1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="Breakdownschets2.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Breakdownschets2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Adidas Pagina (pagina 2): 
-  <img src="Breakdownschets3.png" width="375px" alt="breakdown van de tweede pagina">
+  <img src="readme-images/Breakdownschets3.png" width="375px" alt="breakdown van de tweede pagina">
 
 </details>
 
