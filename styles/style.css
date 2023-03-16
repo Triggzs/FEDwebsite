@@ -239,6 +239,7 @@ nav ul.hamburgerUnorderd > li {
 #hamNav.toonMenu {
   transform: translatex(0%);
 }
+
 /*MEDIA QUERRY VOOR REDUCED MOTION*/
 @media (prefers-reduced-motion) {
   #hamNav.toonMenu {
@@ -337,9 +338,6 @@ button.mainButton {
 }
 
 .footerContent {
-  display: flex;
-  align-items: center;
-
   font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -350,12 +348,12 @@ button.mainButton {
 }
 
 details {
-  position: relative;
   width: 100%;
   margin-left: 10px;
 }
 
-a {
+/* Adidas link is hierdoor zwart */
+a { 
   color: inherit;
   text-decoration: none;
 }
@@ -410,10 +408,12 @@ input[type="Email"] {
 video {
   width: 100%;
 }
+
 #banner {
   display: grid;
   width: 100%;
 }
+
 #banner > h1 {
   font-family: BB-CondBold, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.375rem;
@@ -463,6 +463,7 @@ section#results p {
   height: 650PX;
   grid-template-columns: 50% 50%;
 }
+
 article.contentTemplate img {
   width: 100%;
 }
