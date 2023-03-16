@@ -92,14 +92,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### Homepage: 
+  <img src="Breakdownschets1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="Breakdownschets2.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Adidas Pagina (pagina 2): 
+  <img src="Breakdownschets3.png" width="375px" alt="breakdown van de tweede pagina">
 
 </details>
 
@@ -275,8 +275,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. REDUCED MOTION - https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+
+ <p>Hier heb ik geleerd hoe ik reduced motion kan toepassen op de website.</p>
+
+  2. DARK MODE - https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-a-body-class
+
+  <p>Hier heb ik geleerd hoe ik het princiepe van dark mode kon toepassen door middel van media querries :)</p>
+
+  3. DETAILS TAG GEBRUIKEN - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+  <p>Spreekt echt voor zich</p>
+
+  4. Z-Index - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index 
+
+  <p>Dit princiepe is ook heel simpel te begrijpen. Ik heb gewoon geleerd hoe ik het beste de details tag kon gebruiken in plaats van een div in de footer!</p>
+
+  5. Vid Tag - https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video_autoplay
+
+  <p>Ik had nog nooit een vid tag gebruikt, die heb ik door deze website geleerd te implementeren op de website</p>
+
+  6. MIJN WEBSITE: https://triggzs.github.io/FEDwebsite/
+
 
 </details>
