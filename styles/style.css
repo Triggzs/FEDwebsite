@@ -489,6 +489,8 @@ article.contentTemplate img {
 }
 
 .contentTemplate h2 {
+  margin-left: 10px;
+  margin-right: 10px;
   color: black;
   text-align: center;
   font-family: BB-CondBold, Helvetica Neue, Helvetica, Arial, sans-serif;
