@@ -36,7 +36,7 @@
                 </li>
 
                 <li id="logo">
-                  <a href="https://triggzs.github.io/FEDwebsite/"
+                  <a href="index.html"
                     ><img
                       id="mainLogo"
                       src="images/BalenciagaLogo.png"
@@ -75,23 +75,12 @@
                 <li>NEW ARRIVALS</li>
                 <li>SUMMER 23</li>
                 <li>3XL</li>
-                <li>ADIDAS</li>
+                <a class="linkjes" href="adidas.html"><li>ADIDAS</li></a>
               </ul>
             </li>
           </ul>
         </nav>
       </section>
-
-      <!-- Hamburger Navigatie
-      <a href="#">
-        <button aria-hidden="true">
-          <img
-            class="navImages"
-            src="images/close.png"
-            alt="The close button for a small size website"
-          />
-        </button>
-      </a> -->
 
       <section id="hamNav">
         <nav class="hamburger">
@@ -204,9 +193,20 @@
     </main>
     <footer>
         <ul class="footerContent">
-          <details>
+          <details id="newsletter">
             <summary>NEWSLETTER</summary>
-            <br>Subscribe to our newsletter <br>
+            <br>Subscribe to our newsletter!<br><br>
+
+            <form action="/action_page.php">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="Email">Email:</label>
+              <input type="email" id="Email" name="Email"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            <br>
+
+
         </details>
         </ul>
 
